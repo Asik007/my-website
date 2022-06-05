@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[7730],{6976:function(e){e.exports=JSON.parse('{"title":"Docs","description":"documentation for EZ-Template.","slug":"/category/docs","permalink":"/my-website/docs/category/docs","navigation":{"next":{"title":"Autonomous Functions","permalink":"/my-website/docs/Docs/auton_functions"}}}')}}]);
