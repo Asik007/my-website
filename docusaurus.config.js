@@ -15,7 +15,7 @@ const config = {
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/pog.ico',
+  favicon: 'img/favicon.ico',
   deploymentBranch: 'pogsite',
 
 
@@ -60,102 +60,66 @@ const config = {
         title: 'EZ Template',
         logo: {
           alt: 'EZ',
-          src: 'img/logo.png',
+          src: 'img/logo.svg',
         },
         items: [
-          {to: '/docs/category/tutorials', label: 'Tutorials', position: 'left'},
           {
             type: 'doc',
-            docId: 'Installation',
+            docId: 'intro',
             position: 'left',
-            label: 'Installation',
+            label: 'Tutorial',
           },
-          {to: '/docs/category/docs', label: 'Docs', position: 'left'},
-          {to: '/docs/category/releases', label: 'Releases', position: 'left'},
-
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/EZ-Robotics/EZ-Template',
+            href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
         ],
       },
-      
-      colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: false,
-        respectPrefersColorScheme: true,
-      },
-      
-      //     },
-      //     {
-      //       title: 'Community',
-      //       items: [
-      //         {
-      //           label: 'Vex Robotics Discord',
-      //           href: 'https://discord.com/invite/vrc',
-      //         },
-      //         {
-      //           label: 'roboticsisez@gmail.com',
-      //           href: 'google.com',
-      //         }
-      //       ],
-      //     },
-      //     {
-      //       title: 'More',
-      //       items: [
-      //         {
-      //           label: 'GitHub',
-      //           href: 'https://github.com/EZ-Robotics/EZ-Template',
-      //         },
-      //       ],
-      //     },
-      //   ],
-      //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      // },
       footer: {
         style: 'dark',
         links: [
           {
             title: 'Docs',
-                  items: [
-                    {
-                      label: 'Tutorial',
-                      to: '/docs/category/tutorials',
-                    },
-                    {
-                      label: 'Installation',
-                      to: '/docs/Installation',
-                    },
-                    {
-                      label: 'Docs',
-                      to: '/docs/category/docs',
-                    },
-                    {
-                      label: 'Releases',
-                      to: '/docs/category/releases',
-                    },                    
-                    
-                  ],
+            items: [
+              {
+                label: 'Tutorial',
+                to: '/docs/intro',
+              },
+            ],
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'Vex Robotics Discord',
-                href: 'https://discord.com/invite/vrc',
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: 'roboticsisez@gmail.com',
-                href: 'mailto:roboticsisez@gmail.com'
-
-              }
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/docusaurus',
+              },
             ],
           },
-          
-          // ... other links
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
+              },
+            ],
+          },
         ],
-
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {

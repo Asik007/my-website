@@ -62,5 +62,3 @@ export default function HomepageFeatures() {
     </section>
   );
 }
-
-
