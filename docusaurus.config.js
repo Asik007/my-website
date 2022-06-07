@@ -34,18 +34,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+          },
+
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -56,6 +49,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [{name: 'keywords', content: 'EZ-template, VRC, VEX, Robotics, VEX-Robotics, library'}],
       navbar: {
         title: 'EZ Template',
         logo: {
@@ -63,15 +57,10 @@ const config = {
           src: 'img/logo.png',
         },
         items: [
-          {to: '/docs/category/tutorials', label: 'Tutorials', position: 'left'},
-          {
-            type: 'doc',
-            docId: 'Installation',
-            position: 'left',
-            label: 'Installation',
-          },
-          {to: '/docs/category/docs', label: 'Docs', position: 'left'},
-          {to: '/docs/category/releases', label: 'Releases', position: 'left'},
+          {to: '/category/tutorials', label: 'Tutorials', position: 'left'},
+          
+          {to: '/category/docs', label: 'Docs', position: 'left'},
+          {to: '/category/releases', label: 'Releases', position: 'left'},
 
           {
             href: 'https://github.com/EZ-Robotics/EZ-Template',
@@ -87,32 +76,6 @@ const config = {
         respectPrefersColorScheme: true,
       },
       
-      //     },
-      //     {
-      //       title: 'Community',
-      //       items: [
-      //         {
-      //           label: 'Vex Robotics Discord',
-      //           href: 'https://discord.com/invite/vrc',
-      //         },
-      //         {
-      //           label: 'roboticsisez@gmail.com',
-      //           href: 'google.com',
-      //         }
-      //       ],
-      //     },
-      //     {
-      //       title: 'More',
-      //       items: [
-      //         {
-      //           label: 'GitHub',
-      //           href: 'https://github.com/EZ-Robotics/EZ-Template',
-      //         },
-      //       ],
-      //     },
-      //   ],
-      //   copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      // },
       footer: {
         style: 'dark',
         links: [
@@ -121,19 +84,15 @@ const config = {
                   items: [
                     {
                       label: 'Tutorial',
-                      to: '/docs/category/tutorials',
-                    },
-                    {
-                      label: 'Installation',
-                      to: '/docs/Installation',
+                      to: '/category/tutorials',
                     },
                     {
                       label: 'Docs',
-                      to: '/docs/category/docs',
+                      to: '/category/docs',
                     },
                     {
                       label: 'Releases',
-                      to: '/docs/category/releases',
+                      to: '/category/releases',
                     },                    
                     
                   ],

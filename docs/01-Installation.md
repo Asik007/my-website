@@ -1,4 +1,18 @@
+---
+title: Introduction
+nav_order: 1
+slug: /
+description: Simple plug-and-play PROS template that handles drive base functions,
+  autonomous selector, input curves and active brake with PTO support.
+image: /img/better_logo.png
+preview: /img/better_logo.png
+---
  
+
+Simple plug-and-play PROS template that handles drive base functions, autonomous selector, input curves and active brake with PTO support.
+
+### Installation
+
 1) Download the latest example project [here](https://github.com/EZ-Robotics/EZ-Template/releases/latest).  Extract the zip, and open it in PROS.   
 2) In `src/main.cpp`, configure drive and IMU ports to what they are on your robot.  Be sure to read the comments!    
 3) Configure your wheel size and cartridge.  Remember that 4" omni wheels are actually 4.125!    
