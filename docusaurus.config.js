@@ -15,7 +15,7 @@ const config = {
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/pog.ico',
   deploymentBranch: 'pogsite',
 
 
@@ -34,18 +34,11 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+          },
+
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -56,70 +49,72 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [{name: 'keywords', content: 'EZ-template, VRC, VEX, Robotics, VEX-Robotics, library'}],
       navbar: {
         title: 'EZ Template',
         logo: {
           alt: 'EZ',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
+          {to: '/category/tutorials', label: 'Tutorials', position: 'left'},
+          
+          {to: '/category/docs', label: 'Docs', position: 'left'},
+          {to: '/category/releases', label: 'Releases', position: 'left'},
+
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/EZ-Robotics/EZ-Template',
             label: 'GitHub',
             position: 'right',
           },
         ],
       },
+      
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
+      },
+      
       footer: {
         style: 'dark',
         links: [
           {
             title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
+                  items: [
+                    {
+                      label: 'Tutorial',
+                      to: '/category/tutorials',
+                    },
+                    {
+                      label: 'Docs',
+                      to: '/category/docs',
+                    },
+                    {
+                      label: 'Releases',
+                      to: '/category/releases',
+                    },                    
+                    
+                  ],
           },
           {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Vex Robotics Discord',
+                href: 'https://discord.com/invite/vrc',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
+                label: 'roboticsisez@gmail.com',
+                href: 'mailto:roboticsisez@gmail.com'
+
+              }
             ],
           },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
+          
+          // ... other links
         ],
+
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
