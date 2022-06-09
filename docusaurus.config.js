@@ -43,7 +43,9 @@ const config = {
         // language of your documentation, see next section
         language: "en",
 
-        style: undefined,
+        // style: undefined,
+        style: './src/css/custom.css',
+
       }
     ],
   ],
