@@ -15,10 +15,13 @@
   --ifm-color-primary-lightest: #ff6ec7;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --aa-text-color-rgb: #ff6ec7;
-  --aa-primary-color-rgb: #ff6ec7;
-  --aa-panel-border-color-rgb: #ff6ec7;
-  --aa-overlay-color-rgb: #ff6ec7;
+
+  
+  --aa-muted-color-rgb: 0, 0, 0 !important;
+  --aa-text-color-rgb: 0, 0, 0 !important;
+  --aa-primary-color-rgb: 255, 110, 199 !important;
+
+  --aa-panel-border-color-rgb: 255, 110, 199 !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -31,7 +34,11 @@
   --ifm-color-primary-lighter:#ff53bd;
   --ifm-color-primary-lightest: #ff6ec7;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --aa-text-color-rgb: #ff6ec7;
-  --aa-primary-color-rgb: #ff6ec7;
-  --aa-panel-border-color-rgb: #ff6ec7;
+  /* --aa-primary-color-rgb: 255, 0, 0 !important; */
+  --aa-muted-color-rgb: 255, 255, 255 !important;
+  --aa-text-color-rgb: 255, 255, 255 !important;
+  --aa-primary-color-rgb: 255, 110, 199 !important;
+
+  --aa-panel-border-color-rgb: 255, 110, 199 !important;
+  --aa-overlay-color-rgb: 10, 10, 10 !important;
 }
